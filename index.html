@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="./src/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="contenedor">
+        <header class="encabezado">
+            <div class="logo">
+                <img src="./img/logo.svg" alt="Logo de Alura">
+            </div>
+        </header>
+
+        <section class="encriptador">
+
+            <textarea class="escribaaqui" type="text" name="input-texto" id="input-texto" placeholder="Escriba su mensaje aquí..."></textarea>
+
+            <div class="minusculas">
+                <p><img src="./img/exclamation.svg" alt="Simbolo exlamación"> Sólo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="botones">
+                <input class="boton1" type="submit" value="Encriptar" id="boton1">
+                <input class="boton2" type="submit" value="Desencriptar" id="boton2">
+            </div>
+
+        </section>
+
+        <section class="desencriptador">
+
+            <div id="desaparece" class="desaparece">
+                <img class="muneco" src="./img/muneco.svg" alt="Mensaje">
+                <h2 class="ningunmensaje">Ningún mensaje fue encontrado</h2>
+                <p class="ingresatexto">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div id="aparece" class="aparece">
+                <textarea class="mensaje" type="text" id="mensaje" placeholder="Ningún mensaje."></textarea>
+                <input class="boton3" type="submit" value="copiar" id="boton1">
+            </div>
+
+        </section>
+
+        <footer class="pie">
+            <p class="copyright">&copy; 2022 <strong>Jennifer Guerrero</strong></p>
+        </footer>
+
+        <script src="./src/script.js"></script>
+        
+    </body>
+</html>

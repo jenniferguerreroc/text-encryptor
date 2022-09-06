@@ -1,0 +1,309 @@
+html{
+    height: 100%;
+}
+
+body{ 
+    background:#FFEDDB ; /*color del fondo*/
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+    flex-wrap: wrap;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb{
+    background: #BF9270;
+    border-radius: 10px;
+}
+
+.encabezado{
+    grid-area: encabezado;
+    display: flex;
+    align-items: center;
+}
+
+.encriptador{
+    grid-area: encriptador;
+    display: flex;
+    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;*/
+}
+  
+.escribaaqui{
+    text-transform: lowercase;
+    resize: none;
+    width: 80%;
+    height: 80%;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 20px;
+    margin: auto;
+}
+::placeholder { color: #BF9270; }
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #BF9270;
+    border-radius: 10px;
+}
+
+.minusculas{
+    margin: auto
+}
+
+.minusculas img{
+    vertical-align: middle;
+}
+
+.minusculas p{
+    color: #BF9270;
+}
+
+.botones{
+    margin: auto;
+}
+
+.boton1{
+    background: #BF9270;
+    color: #FFEDDB;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    width: 200px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.boton2{
+    background: #ffffff;
+    color: #BF9270;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    width: 200px;
+    margin:10px;
+    cursor: pointer;
+}
+
+.desencriptador{
+    grid-area: desencriptador;
+    background: #ffffff;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+
+}
+
+.desaparece{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.muneco{
+    width: 80%;
+}
+
+.ningunmensaje{
+    color: #BF9270;
+    font-weight: bold;
+    text-align: center;
+    margin: 4%;
+}
+
+.ingresatexto{
+    color: #BF9270;
+    text-align: center;
+    margin: 0 4%;
+}
+
+.aparece{
+    height: 80%;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mensaje{
+    resize: none;
+    border: none;
+    outline: none;
+    font-family: 'Poppins';
+    font-size: 20px;
+    text-align: center;
+    background: none;
+    width: 90%;
+    height: 90%;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #BF9270;
+    border-radius: 10px;
+}
+
+.boton3{
+    background: #BF9270;
+    color: #FFEDDB;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 24px;
+    font-family: 'Poppins';
+    width: 200px;
+    cursor: pointer;
+}
+
+.pie{
+    grid-area: pie;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: #BF9270;
+}
+
+.contenedor{
+    display: grid;
+    column-gap: 10px;
+    row-gap: 10px;
+    grid-template-areas:
+    "encabezado"
+    "encriptador"
+    "desencriptador"
+    "pie";
+
+}
+
+
+.contenedor{
+    grid-template-columns: 70% auto;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+    "encabezado     encabezado" 
+    "encriptador    desencriptador"
+    "pie            pie" ;
+}
+
+
+@media screen and (max-width:480px) {
+    .contenedor{
+        grid-template:
+        "encabezado" 10%
+        "encriptador" 40%
+        "desencriptador" 40%
+        "pie" 10%;
+    }
+
+    .logo img{
+        width: 80%;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .desaparece{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .muneco{
+        width: 80%;
+        margin-top: 10px
+    }
+
+    .ningunmensaje{
+        margin: 3%;
+        font-size: 20px;
+
+    }
+
+    .ingresatexto{
+        margin: 5%;
+        font-size: 15px;
+    }
+
+    .logo{
+        margin-left: -9%;
+    }
+
+
+
+}
+
+@media screen and (max-width:1023px) {
+    .contenedor{
+        grid-template:
+        "encabezado" 10%
+        "encriptador" 40%
+        "desencriptador" 40%
+        "pie" 10%;
+    }
+
+    .botones{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .muneco{
+        width: 80%;
+        margin-top: 3%;
+        
+    }
+
+    .ningunmensaje{
+        margin: 3%;
+        font-size: 80%;
+    }
+
+    .ingresatexto{
+        margin: 3%;
+        font-size: 70%;
+    }
+
+    .logo{
+        margin-left: -4%;
+    }
+
+    .pie{
+        align-items: flex-start;
+    }
+} 
