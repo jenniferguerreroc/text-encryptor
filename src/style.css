@@ -30,10 +30,6 @@ body::-webkit-scrollbar-thumb{
     grid-area: encriptador;
     display: flex;
     flex-direction: column;
-    /*display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;*/
 }
   
 .escribaaqui{
@@ -118,6 +114,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
 }
 
 .muneco{
@@ -270,8 +267,8 @@ footer p{
     .contenedor{
         grid-template:
         "encabezado" 10%
-        "encriptador" 40%
-        "desencriptador" 40%
+        "encriptador" 50%
+        "desencriptador" 30%
         "pie" 10%;
     }
 
@@ -281,15 +278,18 @@ footer p{
         align-items: center;
         flex-direction: column;
     }
+    
+    .minusculas p{
+        margin: 3px;
+        font-size: 80%;
+    }
 
     .muneco{
-        width: 80%;
-        margin-top: 3%;
+        display:none;
         
     }
 
     .ningunmensaje{
-        margin: 3%;
         font-size: 80%;
     }
 
